@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-20T12:57:54 IST" name="Default suite" finished-at="2023-09-20T12:58:03 IST" duration-ms="9169">
+    <groups>
+    </groups>
+    <test started-at="2023-09-20T12:57:54 IST" name="Default test" finished-at="2023-09-20T12:58:03 IST" duration-ms="9169">
+      <class name="Base_class_ZMT.Test_scripts">
+        <test-method is-config="true" signature="createsuite(org.testng.ITestContext)[pri:0, instance:Base_class_ZMT.Test_scripts@13e344d]" started-at="2023-09-20T12:57:52 IST" name="createsuite" finished-at="2023-09-20T12:57:54 IST" duration-ms="1615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3872bc37]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createsuite -->
+        <test-method is-config="true" signature="Startup()[pri:0, instance:Base_class_ZMT.Test_scripts@13e344d]" started-at="2023-09-20T12:57:54 IST" name="Startup" finished-at="2023-09-20T12:57:58 IST" duration-ms="4196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Startup -->
+        <test-method is-config="true" signature="Beforetest(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:Base_class_ZMT.Test_scripts@13e344d]" started-at="2023-09-20T12:57:58 IST" name="Beforetest" finished-at="2023-09-20T12:57:58 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3872bc37]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void Base_class_ZMT.Test_scripts.TestScript1() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Beforetest -->
+        <test-method signature="TestScript1()[pri:0, instance:Base_class_ZMT.Test_scripts@13e344d]" started-at="2023-09-20T12:57:58 IST" name="TestScript1" finished-at="2023-09-20T12:58:02 IST" duration-ms="3921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestScript1 -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:Base_class_ZMT.Test_scripts@13e344d]" started-at="2023-09-20T12:58:02 IST" name="afterTest" finished-at="2023-09-20T12:58:03 IST" duration-ms="888" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestScript1 status=SUCCESS method=Test_scripts.TestScript1()[pri:0, instance:Base_class_ZMT.Test_scripts@13e344d] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3872bc37]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.gurock.testrail.APIException">
+            <message>
+              <![CDATA[TestRail API returned HTTP 400("Field :run_id is not a valid ID.")]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.gurock.testrail.APIException: TestRail API returned HTTP 400("Field :run_id is not a valid ID.")
+at com.gurock.testrail.APIClient.sendRequest(APIClient.java:296)
+at com.gurock.testrail.APIClient.sendPost(APIClient.java:132)
+at Base_class_ZMT.Base_class_Zomato.afterTest(Base_class_Zomato.java:111)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.gurock.testrail.APIException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:Base_class_ZMT.Test_scripts@13e344d]" started-at="2023-09-20T12:58:03 IST" name="Teardown" finished-at="2023-09-20T12:58:03 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- Base_class_ZMT.Test_scripts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
